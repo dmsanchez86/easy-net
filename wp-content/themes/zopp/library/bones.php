@@ -49,7 +49,7 @@ function bfg_scripts_and_styles() {
 	wp_register_script( 'owl-js', get_stylesheet_directory_uri() . '/library/js/owl-carousel/owl.carousel.min.js', array( 'jquery' ), '', true );
 
 
-    /*
+    /*rtggtg
     now let's enqueue the scripts and styles into the wp_head function.
     for more information on how this works, check out this post:
     http://wpcandy.com/teaches/how-to-load-scripts-in-wordpress-themes

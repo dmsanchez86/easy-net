@@ -431,10 +431,152 @@ label{
 		max-width: 98%;
 	}
 }*/
+.icon{
+	cursor: pointer;
+	height:32px;
+	margin: 5px 5px 3px 0;
+	width:32px;
+}
 .center{
 	text-align: center;
 }
 .all{
 	background: steelblue;
 	max-width: 100%;
+}
+.redes{
+	position: relative;
+}
+.redes div{
+	display: inline;
+	float:right;
+}
+.redes span{
+	clear: both;
+	float:right;
+	margin-right:5px;
+}
+.redes span a{
+	color: #b5b5b5;
+}
+.redes span{
+	color: #b5b5b5;
+}
+.nav a{
+	color: #03bbef;
+	margin: 0 10px;
+	text-transform: uppercase;
+}
+a.active{
+	color: #023f6b;
+}
+h1.title{
+	color: #053d6c;
+	font-size:1.8em;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+span.title{
+	color: #053d6c;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.center{
+	text-align: center;
+}
+.center input[type=text], .center input[type=submit]{
+	border: none;
+	padding: .75em 1em;
+}
+.center input[type=text]{
+	background: #edf4f3;
+	border-radius: 10px;
+	color: #023a6b;
+	width: 80%;
+}
+.center input[type=submit]{
+	background: #003f6b;
+	color: #cfcbca;
+	text-transform: uppercase;
+}
+.paragraph{
+	color: #b5b5b5;
+	word-wrap: nowrap;
+}
+.link{
+	color: #00406c;
+}
+article.all{
+	background: #edf4f3;
+}
+section.all{
+	background: #00bdf1;
+}
+div.paragraph{
+	color:#808183;
+	padding-right:12px;
+}
+.title-footer{
+	color: #7c7c7c;
+	font-weight: bold;
+	margin: 1em 20px 0 0;
+}
+.button{
+	background: #003f6b;
+	border: none;
+	color: #cfcbca;
+	padding: .75em 1em;
+}
+h2.title,.novedades h1{
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	margin-top: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+h3.title{
+	color: #053d6c;
+	font-size:3em;
+	margin: 0;
+}
+h4.title{
+	margin-top: 0;
+	font-size: 1.5em;
+}
+.services{
+	color: white;
+}
+.services input[type=text],.services input[type=email],.services select{
+	margin: 5px auto;
+	padding: .75em 1em;
+	width: 97%;
+}
+.services select{
+	background: url(https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/fondo.png) no-repeat white;
+	background-size: 8%;
+	background-position: 100% 12%;
+	color: gray;
+	padding-right: 2em;
+}
+.novedades h1, .novedades p{
+	color: white;
+	font-style: italic;
+}
+.novedades a{
+	color: #003f6b;
+}
+.text-footer{
+	padding: 1.9em 0;
+	text-align: center;
+}
+.text-footer span{
+	color: white;
+	font-size: .8em;
+	
+	text-transform: uppercase;
+}
+aside.all{
+	background: #4682b4;
 }

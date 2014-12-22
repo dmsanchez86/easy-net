@@ -24,7 +24,6 @@ function bfg_scripts_and_styles() {
     wp_register_style( 'light-css',  get_stylesheet_directory_uri() . '/library/js/lightbox/css/lightbox.css', array(), '' );
 	wp_register_style( 'icon-css',  'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array(), '' );
     wp_register_style( 'fonts-css',  'http://fonts.googleapis.com/css?family=Oswald', array(), '' );
-    wp_register_style( 'owl-css',  get_stylesheet_directory_uri() . '/library/js/owl-carousel/assets/owl.carousel.css', array(), '' );
 
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
       wp_enqueue_script( 'comment-reply' );
@@ -46,7 +45,7 @@ function bfg_scripts_and_styles() {
     wp_register_script( 'viewport-js', get_stylesheet_directory_uri() . '/library/js/libs/viewportchecker.js', array( 'jquery' ), '', true );
 	wp_register_script( 'acciones-js', get_stylesheet_directory_uri() . '/library/js/acciones.js', array( 'jquery' ), '', true );
 	wp_register_script( 'light-js', get_stylesheet_directory_uri() . '/library/js/lightbox/js/lightbox.js', array( 'jquery' ), '', true );
-	wp_register_script( 'owl-js', get_stylesheet_directory_uri() . '/library/js/owl-carousel/owl.carousel.min.js', array( 'jquery' ), '', true );
+	wp_register_script( 'owl-js', 'http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.min.js', array( 'jquery' ), '', true );
 
 
     /*rtggtg
@@ -59,8 +58,9 @@ function bfg_scripts_and_styles() {
     wp_enqueue_style('bones-ie-only');
     wp_enqueue_style('boostrap-theme');
     wp_enqueue_style('boostrap-css');
-    wp_enqueue_style('owl-theme');
     wp_enqueue_style('owl-css');
+    wp_enqueue_style('owl-theme');
+
     wp_enqueue_style('animate-css');
     wp_enqueue_style('responsive-css');
     wp_enqueue_style('grid-css');
@@ -68,7 +68,7 @@ function bfg_scripts_and_styles() {
 	wp_enqueue_style('light-css');
     wp_enqueue_style('icon-css');
     wp_enqueue_style('fonts-css');
-    wp_enqueue_style('owl-css');
+
 	
     /*
     I reccomend using a plugin to call jQuery
@@ -77,6 +77,7 @@ function bfg_scripts_and_styles() {
     */
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bfg-maps' );
+     wp_enqueue_script( 'owl-js' );
     // deregister the superfish scripts
     wp_deregister_script( 'superfish' );
     wp_deregister_script( 'superfish-args' );
@@ -87,11 +88,9 @@ function bfg_scripts_and_styles() {
     wp_enqueue_script( 'zoppscriptgenerales' );
     wp_enqueue_script( 'zoppscript' );
     wp_enqueue_script( 'boostrap-js' );
-    wp_enqueue_script( 'owl-js' );
     wp_enqueue_script( 'scroll-js' );
     wp_enqueue_script( 'viewport-js' );
 	wp_enqueue_script( 'acciones-js' );
-	wp_enqueue_script( 'light-js' );
 
 } /* end scripts and styles function */
 

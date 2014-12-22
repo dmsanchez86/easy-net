@@ -63,7 +63,7 @@ function bfg_scripts_and_styles() {
 
     wp_enqueue_style('animate-css');
     wp_enqueue_style('responsive-css');
-    wp_enqueue_style('grid-css');
+   // wp_enqueue_style('grid-css');
 	wp_enqueue_style('fincaycafe-css');
 	wp_enqueue_style('light-css');
     wp_enqueue_style('icon-css');

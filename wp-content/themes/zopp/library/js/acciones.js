@@ -9,6 +9,10 @@ jQuery(document).ready(function(){
 	jQuery("#owl-example1").owlCarousel({
 		items:1
 	});
+	jQuery("#owl-example2").owlCarousel({
+		items:5
+		
+	});
 });
 
 

@@ -431,18 +431,34 @@ label{
 		max-width: 98%;
 	}
 }*/
+.all{
+	margin: 0 1em;
+}
 .icon{
 	cursor: pointer;
-	height:32px;
+	height:48px;
 	margin: 5px 5px 3px 0;
-	width:32px;
+	position: relative;
+	top: 0;
+	width:48px;
+}
+.logo{
+	text-align: center;
+}
+.logo img{
+	height: 170px;
+	width: 270px;
 }
 .center{
 	text-align: center;
 }
 .all{
-	background: steelblue;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+div.all{
 	max-width: 100%;
+	margin: 1em 0 1.8em;
 }
 .redes{
 	position: relative;
@@ -461,10 +477,15 @@ label{
 }
 .redes span{
 	color: #b5b5b5;
+	margin-right: 1.2em;
 }
-.nav a{
+.navigator{
+	margin: 8px auto 1.5em;
+}
+.navigator a{
 	color: #03bbef;
-	margin: 0 10px;
+	font-weight: bold;
+	margin: 5px 10px 1em;
 	text-transform: uppercase;
 }
 a.active{
@@ -473,6 +494,7 @@ a.active{
 h1.title{
 	color: #053d6c;
 	font-size:1.8em;
+	font-weight: bold;
 	margin: 0;
 	text-align: center;
 	text-transform: uppercase;
@@ -510,12 +532,16 @@ span.title{
 }
 article.all{
 	background: #edf4f3;
+	margin-bottom: 0;
 }
 section.all{
 	background: #00bdf1;
+	margin: 0;
+	padding: 1.5em 0;
 }
 div.paragraph{
 	color:#808183;
+	margin-top: 2em;
 	padding-right:12px;
 }
 .title-footer{
@@ -527,7 +553,8 @@ div.paragraph{
 	background: #003f6b;
 	border: none;
 	color: #cfcbca;
-	padding: .75em 1em;
+	font-style: italic;
+	padding: .75em 1.6em;
 }
 h2.title,.novedades h1{
 	font-size: 1.5em;
@@ -549,16 +576,22 @@ h4.title{
 	color: white;
 }
 .services input[type=text],.services input[type=email],.services select{
+	border-color: transparent;
 	margin: 5px auto;
 	padding: .75em 1em;
 	width: 97%;
 }
 .services select{
-	background: url(https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/fondo.png) no-repeat white;
-	background-size: 8%;
-	background-position: 100% 12%;
+	background: url(https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/inferior1.png) no-repeat white right;
+	background-size: 10%;
+	background-position: 101% 72%;
+	cursor: pointer;
 	color: gray;
 	padding-right: 2em;
+	-webkit-appearance: none !important;
+	-o-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
 }
 .novedades h1, .novedades p{
 	color: white;
@@ -578,5 +611,34 @@ h4.title{
 	text-transform: uppercase;
 }
 aside.all{
-	background: #4682b4;
+	background: #003f6b;
+	margin:0;
+}
+.image{
+	width: 100%;
+	height: 100%;
+}
+.img{
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.theader{
+	margin: 2em 0;
+}
+.icon-menu{
+	text-align: center;
+}
+.icon-menu img{
+	height: 95px;
+	margin-top: 10px;
+	width: 95px;
+}
+.soport{
+	margin-top: 1em;
+}
+.carrusel{
+	background: #f60;
+	height: 180px;
+	margin: 0 5px;
+	width: 180px;
 }

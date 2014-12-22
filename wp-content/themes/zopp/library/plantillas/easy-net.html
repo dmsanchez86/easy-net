@@ -5,18 +5,20 @@
 				<div class="col-md-4 column">
 				</div>
 				<div class="col-md-4 column">
-				    Logo
+				    <div class="logo">
+				    	<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r1_c1.png"></img>
+				    </div>
 				</div>
 				<div class="col-md-4 column">
 				    <div class="redes">
 				    	<div>
 				    		<a href="htpps://facebook.com/easynet">
-				    		<img class="icon" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/fb1.png"/>
+				    		<img class="icon" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r4_c7.png"/>
 				    		</a>
 				    	</div>
 				    	<div>
 				    		<a href="https://twitter.com/easynet">
-				    		<img class="icon" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/tw.png"/>
+				    		<img class="icon" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r4_c5.png"/>
 				    		</a>
 				    		</div>
 				    	<span><a href="/es">ESP</a> / <a href="/en">ENG</a></span>
@@ -28,7 +30,7 @@
 				<div class="col-md-4 column">
 				</div>
 				<div class="col-md-4 column center">
-				    <div class="nav">
+				    <div class="navigator">
 					    <a href="#" class="active">Inicio</a>
 					    <a href="#">Quien&eacute;s Somos</a>
 					    <a href="#">Contacto</a>
@@ -54,17 +56,17 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/1" />
-						<div class="carousel-caption">
+						<img class="image" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/caballo-1.png" />
+						<!--<div class="carousel-caption">
 							<h4>
 								First Thumbnail label
 							</h4>
 							<p>
 								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 							</p>
-						</div>
+						</div>-->
 					</div>
-					<div class="item">
+					<!--<div class="item">
 						<img alt="" src="http://lorempixel.com/1600/500/sports/2" />
 						<div class="carousel-caption">
 							<h4>
@@ -86,22 +88,28 @@
 							</p>
 						</div>
 					</div>
-				</div> <a class="left carousel-control" href="#carousel-915666" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-915666" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div> <a class="left carousel-control" href="#carousel-915666" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-915666" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>-->
 			</div>
 		</div>
 	</div>
 </div>
+</div>
 <div class="container">
-	<div class="row clearfix">
-		<div class="col-md-3 column">
+	<div class="theader">
+		<div class="row clearfix">
+		<div class="col-md-4 column">
+			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r10_c3.png"/>
 		</div>
-		<div class="col-md-6 column">
+		<div class="col-md-4 column">
 		    <h1 class="title">Tenemos que Ofrecerte </h1>
 		</div>
-		<div class="col-md-3 column">
+		<div class="col-md-4 column">
+			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r12_c4.png"/>
 		</div>
 	</div>
-	<div class="row clearfix">
+	</div>
+	<div class="theader">
+		<div class="row clearfix">
 		<div class="col-md-3 column">
 		</div>
 		<div class="col-md-6 column">
@@ -114,16 +122,21 @@
 		<div class="col-md-3 column">
 		</div>
 	</div>	
+	</div>
 	<script type="text/javascript" src="http://owlgraphic.com/owlcarousel/assets/js/jquery-1.9.1.min.js"></script>
-	
-	<div id="owl-example" class="owl-carousel owl-theme">
+	<div class="theader">
+		<div id="owl-example" class="owl-carousel owl-theme">
 		<!-- Divs para el owl carousel -->
 		<div>
 			<div class="col-md-4 column">
-				<div class="row clearfix">
+				<div class="row clearfix all">
 					<div class="col-md-12 column">
 						<div class="row clearfix">
-							<div class="col-md-4 column">Imagen</div>
+							<div class="col-md-4 column">
+								<div class="icon-menu">
+									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
+								</div>
+							</div>
 							<div class="col-md-8 column">
 								<div>
 									<span class="title">Automatizacion Fuerza de Ventas</span>
@@ -138,10 +151,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="row clearfix">
+				<div class="row clearfix all">
 					<div class="col-md-12 column">
 						<div class="row clearfix">
-							<div class="col-md-4 column">Imagen</div>
+							<div class="col-md-4 column">
+								<div class="icon-menu">
+									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
+								</div>
+							</div>
 							<div class="col-md-8 column">
 								<div><span class="title">Automatizacion Fuerza de Ventas</span></div>
 								<div>
@@ -154,10 +171,14 @@
 				</div>
 			</div>
 			<div class="col-md-4 column">
-				<div class="row clearfix">
+				<div class="row clearfix all">
 					<div class="col-md-12 column">
 						<div class="row clearfix">
-							<div class="col-md-4 column">Imagen</div>
+							<div class="col-md-4 column">
+								<div class="icon-menu">
+									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
+								</div>
+							</div>
 							<div class="col-md-8 column">
 								<div>
 									<span class="title">Automatizacion Fuerza de Ventas</span>
@@ -172,10 +193,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="row clearfix">
+				<div class="row clearfix all">
 					<div class="col-md-12 column">
 						<div class="row clearfix">
-							<div class="col-md-4 column">Imagen</div>
+							<div class="col-md-4 column">
+								<div class="icon-menu">
+									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
+								</div>
+							</div>
 							<div class="col-md-8 column">
 								<div>
 									<span class="title">Automatizacion Fuerza de Ventas</span>
@@ -192,10 +217,14 @@
 				</div>
 			</div>
 			<div class="col-md-4 column">
-				<div class="row clearfix">
+				<div class="row clearfix all">
 					<div class="col-md-12 column">
 						<div class="row clearfix">
-							<div class="col-md-4 column">Imagen</div>
+							<div class="col-md-4 column">
+								<div class="icon-menu">
+									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
+								</div>
+							</div>
 							<div class="col-md-8 column">
 								<div>
 									<span class="title">Automatizacion Fuerza de Ventas</span>
@@ -210,10 +239,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="row clearfix">
+				<div class="row clearfix all">
 					<div class="col-md-12 column">
 						<div class="row clearfix">
-						<div class="col-md-4 column">Imagen</div>
+						<div class="col-md-4 column">
+							<div class="icon-menu">
+									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
+							</div>
+						</div>
 							<div class="col-md-8 column">
 								<div>
 									<span class="title">Automatizacion Fuerza de Ventas</span>
@@ -284,17 +317,25 @@
 			</div>
 		</div>
 	</div>
+	</div>
 </div>
 <article class="all">
 	<div class="container">
+		<div class="theader">
 		<div class="row clearfix">
-		<div class="col-md-3 column">
+		<div class="col-md-4 column">
+			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r10_c3.png"/>
 		</div>
-		<div class="col-md-6 column">
+		<div class="col-md-4 column">
 			<h1 class="title"> Casos de Exito</h1>
 		</div>
-		<div class="col-md-3 column">
+		<div class="col-md-4 column">
+			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r12_c4.png"/>
 		</div>
+		</div>
+		</div>
+		<div class="theader">
+		<div class="row clearfix">
 		<div class="col-md-12 column">
 		    
 		    <div class="row clearfix">
@@ -308,7 +349,9 @@
     						<div class="col-md-12 column">
     							<div class="row clearfix">
 								<div class="col-md-4 column">
-	    							imagen
+	    							<div>
+	    								<img class="picture" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/Casos-exito.png"></img>
+	    								</div>
 		    					</div>
 				    			<div class="col-md-8 column">
 				    				<div class="paragraph"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -337,7 +380,9 @@
     						<div class="col-md-12 column">
     							<div class="row clearfix">
 								<div class="col-md-4 column">
-	    							imagen
+	    							<div>
+	    								<img class="picture" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/Casos-exito.png"></img>
+	    							</div>
 		    					</div>
 				    			<div class="col-md-8 column">
 				    				<div class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -367,6 +412,7 @@
 		    		
 		    	</div>
 		    </div>
+		</div>
 		</div>
 		</div>
 		
@@ -454,61 +500,43 @@
 	</div>
 </section>
 <div class="container">
-	<div class="row clearfix">
+	<div class="theader">
+		<div class="row clearfix">
 		<div class="col-md-4 column">
+			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r10_c3.png"/>
 		</div>
 		<div class="col-md-4 column">
 			<h1 class="title">Somos Partners</h1>
 		</div>
 		<div class="col-md-4 column">
+			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r12_c4.png"/>
 		</div>
 	</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="carousel slide" id="carousel-179863">
-				<ol class="carousel-indicators">
-					<li class="active" data-slide-to="0" data-target="#carousel-179863">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-179863">
-					</li>
-					<li data-slide-to="2" data-target="#carousel-179863">
-					</li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/1" />
-						<div class="carousel-caption">
-							<h4>
-								First Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
+	</div>
+	<div class="theader">
+		<div class="row clearfix">
+			<div class="col-md-1 column">
+			</div>
+			<div class="col-md-10 column">
+				<div id="owl-example2" class="owl-carousel owl-theme">
+					<div class="carrusel">
+						
 					</div>
-					<div class="item">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/2" />
-						<div class="carousel-caption">
-							<h4>
-								Second Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
+					<div class="carrusel">
+						
 					</div>
-					<div class="item">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/3" />
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
+					<div class="carrusel">
+						
 					</div>
-				</div> <a class="left carousel-control" href="#carousel-179863" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-179863" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+					<div class="carrusel">
+						
+					</div>
+					<div class="carrusel">
+						
+					</div>
+				</div>	
+			</div>
+			<div class="col-md-1 column">
 			</div>
 		</div>
 	</div>

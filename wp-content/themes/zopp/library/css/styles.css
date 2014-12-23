@@ -604,6 +604,12 @@ h4.title{
 	padding: 1.9em 0;
 	text-align: center;
 }
+.float{
+	float: left;
+	height: 300px;
+	margin: 10px 2em 2em 0;
+	width: 500px;
+}
 .text-footer span{
 	color: white;
 	font-size: .8em;
@@ -637,8 +643,22 @@ aside.all{
 	margin-top: 1em;
 }
 .carrusel{
-	background: #f60;
+	background: silver;
 	height: 180px;
 	margin: 0 5px;
 	width: 180px;
+}
+.carrusel img{
+	height: 100%;
+	width: 100%;
+}
+.small{
+	margin-top: 2em;
+}
+article.video{
+	background: #053f65;
+	border: 2px inset #053f65;
+	height: 220px;
+	margin: .5em;
+	width: 350px;
 }

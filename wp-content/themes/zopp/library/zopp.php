@@ -65,7 +65,13 @@ function pie_de_pagina(){?>
 
 function custom_loop(){
 	$tpl = new RaintTplConnect("wp-content/themes/zopp/library/plantillas/");
-	$tpl->dibujarPlantilla("easy-net"/*,array("datos"=>$datos,"pie"=>$pie)*/);
+//	$tpl->dibujarPlantilla("easy-net"/*,array("datos"=>$datos,"pie"=>$pie)*/);
+	if(get_the_ID()=="21"){
+		$tpl->dibujarPlantilla("automatizacion/index"/*,array("datos"=>$datos,"pie"=>$pie)*/);
+	}
+	else if(get_the_ID()=="1"){
+		$tpl->dibujarPlantilla("easy-net"/*,array("datos"=>$datos,"pie"=>$pie)*/);
+	}
 }
 
 include_once "funcionesjson.php";

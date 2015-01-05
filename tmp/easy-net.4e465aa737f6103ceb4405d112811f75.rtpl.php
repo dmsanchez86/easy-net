@@ -6,19 +6,21 @@
 				</div>
 				<div class="col-md-4 column">
 				    <div class="logo">
-				    	<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r1_c1.png"></img>
+				    	<a href="/">
+				    		<img src="/wp-content/uploads/2014/12/easynet_web-01_r1_c1.png"/>
+				    	</a>
 				    </div>
 				</div>
 				<div class="col-md-4 column">
 				    <div class="redes">
 				    	<div>
 				    		<a href="htpps://facebook.com/easynet">
-				    		<img class="icon" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r4_c7.png"/>
+				    		<img class="icon" src="/wp-content/uploads/2014/12/easynet_web-01_r4_c7.png"/>
 				    		</a>
 				    	</div>
 				    	<div>
 				    		<a href="https://twitter.com/easynet">
-				    		<img class="icon" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r4_c5.png"/>
+				    		<img class="icon" src="/wp-content/uploads/2014/12/easynet_web-01_r4_c5.png"/>
 				    		</a>
 				    		</div>
 				    	<span><a href="/es">ESP</a> / <a href="/en">ENG</a></span>
@@ -31,9 +33,9 @@
 				</div>
 				<div class="col-md-4 column center">
 				    <div class="navigator">
-					    <a href="#" class="active">Inicio</a>
-					    <a href="#">Quien&eacute;s Somos</a>
-					    <a href="#">Contacto</a>
+					    <a href="/" class="active">Inicio</a>
+					    <a href="/que-somos/">Quien&eacute;s Somos</a>
+					    <a href="/contacto/">Contacto</a>
 				    </div>
 				</div>
 				<div class="col-md-4 column">
@@ -56,18 +58,20 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<img class="image" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/caballo-1.png" />
-						<!--<div class="carousel-caption">
+						<img class="image" src="/wp-content/uploads/2014/12/caballo-1.png" />
+						<div class="carousel-caption">
 							<h4>
 								First Thumbnail label
 							</h4>
 							<p>
 								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 							</p>
-						</div>-->
+						</div>
 					</div>
-					<!--<div class="item">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/2" />
+					<?php $counter1=-1; if( isset($slider) && is_array($slider) && sizeof($slider) ) foreach( $slider as $key1 => $value1 ){ $counter1++; ?>
+
+					<div class="item">
+						<img alt="" class="image" src='<?php echo $value1["urlimg"][0];?>' />
 						<div class="carousel-caption">
 							<h4>
 								Second Thumbnail label
@@ -77,18 +81,9 @@
 							</p>
 						</div>
 					</div>
-					<div class="item">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/3" />
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-				</div> <a class="left carousel-control" href="#carousel-915666" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-915666" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>-->
+					<?php } ?>
+
+				</div> <a class="left carousel-control" href="#carousel-915666" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-915666" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
 		</div>
 	</div>
@@ -98,10 +93,10 @@
 	<div class="theader">
 		<div class="row clearfix">
 		<div class="col-md-4 column">
-			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r10_c3.png"/>
+			<img class="img" src="/wp-content/uploads/2014/12/easynet_web-01_r10_c3.png"/>
 		</div>
 		<div class="col-md-4 column">
-		    <h1 class="title">Tenemos que Ofrecerte </h1>
+		    <h1 class="title">Tenemos para Ofrecerte </h1>
 		</div>
 		<div class="col-md-4 column">
 			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r12_c4.png"/>
@@ -114,10 +109,9 @@
 		</div>
 		<div class="col-md-6 column">
 			<div class="center">
-				<input type="text" name="txtname" value="Ciudad, nombre de la empresa, pais..."/>
-				<input type="submit" name="btn" value="Buscar"/>
+				<?php echo $fb;?>
+
 			</div>
-		
 		</div>
 		<div class="col-md-3 column">
 		</div>
@@ -127,8 +121,12 @@
 	<div class="theader">
 		<div id="owl-example" class="owl-carousel owl-theme">
 		<!-- Divs para el owl carousel -->
+		<?php $counter1=-1; if( isset($categorias) && is_array($categorias) && sizeof($categorias) ) foreach( $categorias as $key1 => $value1 ){ $counter1++; ?>
+
 		<div>
-			<div class="col-md-4 column">
+			<?php $counter2=-1; if( isset($value1) && is_array($value1) && sizeof($value1) ) foreach( $value1 as $key2 => $value2 ){ $counter2++; ?>
+
+			<div class="col-md-4 column itemll">
 				<div class="row clearfix all">
 					<div class="col-md-12 column">
 						<div class="row clearfix">
@@ -139,183 +137,24 @@
 							</div>
 							<div class="col-md-8 column">
 								<div>
-									<span class="title">Automatizacion Fuerza de Ventas</span>
+									<span class="title"><?php echo $value2->name;?></span>
 								</div>
 								<div>
-									<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+									<p class="paragraph"><?php echo $value2->category_description;?></p>
 								</div>
 								<div>
-									<a class="link" href="#">VER MAS</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row clearfix all">
-					<div class="col-md-12 column">
-						<div class="row clearfix">
-							<div class="col-md-4 column">
-								<div class="icon-menu">
-									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
-								</div>
-							</div>
-							<div class="col-md-8 column">
-								<div><span class="title">Automatizacion Fuerza de Ventas</span></div>
-								<div>
-									<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-								</div>
-								<div><a class="link" href="#">VER MAS</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 column">
-				<div class="row clearfix all">
-					<div class="col-md-12 column">
-						<div class="row clearfix">
-							<div class="col-md-4 column">
-								<div class="icon-menu">
-									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
-								</div>
-							</div>
-							<div class="col-md-8 column">
-								<div>
-									<span class="title">Automatizacion Fuerza de Ventas</span>
-								</div>
-								<div>
-									<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-								</div>
-								<div>
-									<a class="link" href="#">VER MAS</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row clearfix all">
-					<div class="col-md-12 column">
-						<div class="row clearfix">
-							<div class="col-md-4 column">
-								<div class="icon-menu">
-									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
-								</div>
-							</div>
-							<div class="col-md-8 column">
-								<div>
-									<span class="title">Automatizacion Fuerza de Ventas</span>
-								</div>
-								<div>
-									<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-								</div>
-								<div>
-									<a class="link" href="#">VER MAS</a>
+									<a class="link" href="category/<?php echo $value2->slug;?>/">VER MAS</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 column">
-				<div class="row clearfix all">
-					<div class="col-md-12 column">
-						<div class="row clearfix">
-							<div class="col-md-4 column">
-								<div class="icon-menu">
-									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
-								</div>
-							</div>
-							<div class="col-md-8 column">
-								<div>
-									<span class="title">Automatizacion Fuerza de Ventas</span>
-								</div>
-								<div>
-									<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-								</div>
-								<div>
-									<a class="link" href="#">VER MAS</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row clearfix all">
-					<div class="col-md-12 column">
-						<div class="row clearfix">
-						<div class="col-md-4 column">
-							<div class="icon-menu">
-									<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r3_c9.png"></img>
-							</div>
-						</div>
-							<div class="col-md-8 column">
-								<div>
-									<span class="title">Automatizacion Fuerza de Ventas</span>
-								</div>
-								<div>
-									<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-								</div>
-								<div>
-									<a class="link" href="#">VER MAS</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php } ?>
+
 		</div>
-		<div>
-			<div class="col-md-4 column">
-				<div class="row clearfix">
-					<div class="col-md-12 column">
-						item1
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-md-12 column">
-						item1
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-md-12 column">
-						item1
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 column">
-				<div class="row clearfix">
-					<div class="col-md-12 column">
-						item1
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-md-12 column">
-						item1
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-md-12 column">
-						item1
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 column">
-				<div class="row clearfix">
-					<div class="col-md-12 column">
-						item1
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-md-12 column">
-						item1
-					</div>
-				</div>
-				<div class="row clearfix">
-					<div class="col-md-12 column">
-						item1
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php } ?>
+
 	</div>
 	</div>
 </div>
@@ -327,7 +166,7 @@
 			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r10_c3.png"/>
 		</div>
 		<div class="col-md-4 column">
-			<h1 class="title"> Casos de Exito</h1>
+			<h1 class="title"> Casos de &Eacute;xito</h1>
 		</div>
 		<div class="col-md-4 column">
 			<img class="img" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r12_c4.png"/>
@@ -344,68 +183,29 @@
 		    	</div>
 		    	<div class="col-md-10 column">
 	    			<div id="owl-example1" class="owl-carousel owl-theme">
+	    				<?php $counter1=-1; if( isset($casos) && is_array($casos) && sizeof($casos) ) foreach( $casos as $key1 => $value1 ){ $counter1++; ?>
+
 	    				<div>
-    					<div class="row clearfix">
-    						<div class="col-md-12 column">
-    							<div class="row clearfix">
-								<div class="col-md-4 column">
-	    							<div>
-	    								<img class="picture" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/Casos-exito.png"></img>
-	    								</div>
-		    					</div>
-				    			<div class="col-md-8 column">
-				    				<div class="paragraph"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-				    				sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-				    				magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-				    				quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-				    				ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-				    				dolor in hendrerit in vulputate velit esse molestie consequat,
-				    				vel illum dolore eu feugiat nulla facilisis at vero eros et
-				    				accumsan et iusto odio dignissim qui blandit praesent luptatum
-				    				zzril delenit augue duis dolore te feugait nulla facilisi.
-				    				Nam liber tempor cum soluta nobis eleifend option congue
-				    				nihil imperdiet doming id quod mazim placerat facer possim
-				    				assum. Typi non habent claritatem insitam; est usus legentis
-				    				in iis qui facit eorum claritatem.</div>
-				    				<div style="text-align:right">
-				    					<p class="title-footer">Lorem Ipsum</p>
-				    				</div>
-				    			</div>
-				    			</div>
-    						</div>
+	    					<div class="row clearfix">
+	    						<div class="col-md-12 column">
+	    							<div class="row clearfix">
+									<div class="col-md-4 column">
+		    							<div>
+		    								<img class="picture" src='<?php echo $value1["urlimg"][0];?>'/>
+		    								</div>
+			    					</div>
+					    			<div class="col-md-8 column">
+					    				<div class="paragraph"> <?php echo $value1["contenidocomleto"];?></div>
+					    				<div style="text-align:right">
+					    					<p class="title-footer">Lorem Ipsum</p>
+					    				</div>
+					    			</div>
+					    			</div>
+	    						</div>
+	    					</div>
     					</div>
-    					</div>
-    					<div>
-    					<div class="row clearfix">
-    						<div class="col-md-12 column">
-    							<div class="row clearfix">
-								<div class="col-md-4 column">
-	    							<div>
-	    								<img class="picture" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/Casos-exito.png"></img>
-	    							</div>
-		    					</div>
-				    			<div class="col-md-8 column">
-				    				<div class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-				    				sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-				    				magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-				    				quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-				    				ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-				    				dolor in hendrerit in vulputate velit esse molestie consequat,
-				    				vel illum dolore eu feugiat nulla facilisis at vero eros et
-				    				accumsan et iusto odio dignissim qui blandit praesent luptatum
-				    				zzril delenit augue duis dolore te feugait nulla facilisi.
-				    				Nam liber tempor cum soluta nobis eleifend option congue
-				    				nihil imperdiet doming id quod mazim placerat facer possim
-				    				assum. Typi non habent claritatem insitam; est usus legentis
-				    				in iis qui facit eorum claritatem.</div>
-				    				<div style="text-align:right">
-				    					<p class="title-footer">Lorem Ipsum</p>
-				    				</div>
-				    			</div>
-				    			</div>
-    						</div>
-    					</div>
-    					</div>
+    					<?php } ?>
+
 	    			</div>
 		    	</div>
 		    	<div class="col-md-1 column">
@@ -424,52 +224,11 @@
 			<div class="container">
 				<div class="col-md-6 column">
 					<div class="services">
-						<div>
-							<h2 class="title">Adquiera nuestros servicios</h2>
-						</div>
-						<div>
-							<div>
-								<input type="text" name="txtName" placeholder="Nombre"/>
-							</div>
-							<div>
-								<input type="email" name="txtemail" placeholder="Email"/>
-							</div>
-							<div>
-								<input type="text" name="txtasunto" placeholder="Asunto"/>
-							</div>
-							<div>
-								<select name="txtmessage" >
-									<option value="mensaje">Mensaje</option>
-								</select>
-							</div>
-						</div>
-						<div class="soport">
-							<div class="row">
-								<div class="col-md-9 column">
-									<h4 class="title">SOPORTE T&Eacute;CNICO</h4>
-									<h3 class="title">018000 3456</h3>
-								</div>
-								<div class="col-md-2 column">
-									<input class="button" type="submit" name="btn" value="ENVIAR"/>
-								</div>
-								<div class="col-md-1 column">
-								</div>
-							</div>
-						</div>
+						<?php echo $fc;?>
+
 					</div>
 					
 				</div>
-				<!--<div class="col-md-4 column">
-					<div>
-						Encuentre al distribuidor mas cercano
-						</div>
-					<div>
-						<input type="text" name="txt" placeholder="Ciudad,nombre de la empresa,pais..."/>
-					</div>
-					<div>
-						<input type="submit" name="btn" value="Buscar"/>
-					</div>
-				</div>-->
 				<div class="col-md-1 column"></div>
 				<div class="col-md-5 column">
 					<div class="novedades">
@@ -520,19 +279,34 @@
 			<div class="col-md-10 column">
 				<div id="owl-example2" class="owl-carousel owl-theme">
 					<div class="carrusel">
-						
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/atat.jpg"/>
 					</div>
 					<div class="carrusel">
-						
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/cisco.png"/>
 					</div>
 					<div class="carrusel">
-						
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/microsoft.jpeg"/>
 					</div>
 					<div class="carrusel">
-						
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/eq1uinix.jpg"/>
 					</div>
 					<div class="carrusel">
-						
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/broadsoft-logo.png"/>
+					</div>
+					<div class="carrusel">
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/atat.jpg"/>
+					</div>
+					<div class="carrusel">
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/cisco.png"/>
+					</div>
+					<div class="carrusel">
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/microsoft.jpeg"/>
+					</div>
+					<div class="carrusel">
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/eq1uinix.jpg"/>
+					</div>
+					<div class="carrusel">
+						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/broadsoft-logo.png"/>
 					</div>
 				</div>	
 			</div>

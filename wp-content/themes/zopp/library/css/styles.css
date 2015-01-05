@@ -493,7 +493,7 @@ a.active{
 }
 h1.title{
 	color: #053d6c;
-	font-size:1.8em;
+	font-size:1.7em;
 	font-weight: bold;
 	margin: 0;
 	text-align: center;
@@ -577,10 +577,11 @@ h4.title{
 }
 .services input[type=text],.services input[type=email],.services select{
 	border-color: transparent;
+	color: black;
 	margin: 5px auto;
 	padding: .75em 1em;
 	width: 97%;
-}
+}	
 .services select{
 	background: url(https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/inferior1.png) no-repeat white right;
 	background-size: 10%;
@@ -606,9 +607,9 @@ h4.title{
 }
 .float{
 	float: left;
-	height: 300px;
+	height: 250px;
 	margin: 10px 2em 2em 0;
-	width: 500px;
+	width: 400px;
 }
 .text-footer span{
 	color: white;
@@ -653,12 +654,106 @@ aside.all{
 	width: 100%;
 }
 .small{
-	margin-top: 2em;
+	
 }
 article.video{
-	background: #053f65;
-	border: 2px inset #053f65;
-	height: 220px;
-	margin: .5em;
-	width: 350px;
+	border: 3px inset #053f65;
+	height: 240px;
+	width: 380px;
+}
+article.video div{
+	background: #053d6c;
+	background-image: url(https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/Play.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 45%;
+	cursor: pointer;
+	height: 204px;
+	margin: 1.3em ;
+	width: 338px;
+}
+h1.tit{
+	color: #053d6c;
+	font-size:3em;
+}
+h1.l{
+	text-align: left;
+}
+a.download{
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 1em 0;
+}
+a.download:before{
+	content: "......";
+	color: transparent;
+	background-image: url(https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/easynet_web-01_r6_c15.png);
+	background-size: 64%;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+.carousel-indicators{
+	bottom: -10px;
+}
+.carousel-indicators li{
+	border-color: transparent;
+	background: gray;
+	height: 20px !important;
+	margin: 1px 5px;
+	width: 20px !important;
+}
+.carousel-indicators .active{
+	border-color: transparent;
+	height: 20px;
+	margin: 1px 5px;
+	width: 20px;
+}
+.tcenter{
+	color: #053d6c;
+	font-weight: bold;
+	text-align: center;
+}
+.tcenter figcaption{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.img-center{
+	height: auto;
+	margin: 0 auto;
+	width: auto;
+}
+.img-height{
+	height: 150px;
+}
+.col-md-4.column.itemll{
+	height: 155px !important;
+}
+textarea{
+	resize: none;
+}
+.form input[type=text],.form select,.form textarea{
+	background: white;
+	border: thin solid #aaa;
+	border-radius: 1px;
+	margin:5px auto;
+	padding: .35em .75em;
+	width:95%;
+}
+.form select{
+	background: url(https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/inferior1.png) no-repeat white right;
+	background-size: 8%;
+	background-position: 100% 72%;
+	-webkit-appearance: none;
+}
+.btn-map{
+	float: right;
+	font-size: .9em;
+	margin-right: 1.8em;
+	padding:.5em .75em;
+}
+h1.left{
+	float: left;
+	margin-bottom: .5em;
 }

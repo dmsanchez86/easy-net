@@ -65,12 +65,38 @@ function pie_de_pagina(){?>
 
 function custom_loop(){
 	$tpl = new RaintTplConnect("wp-content/themes/zopp/library/plantillas/");
-//	$tpl->dibujarPlantilla("easy-net"/*,array("datos"=>$datos,"pie"=>$pie)*/);
-	if(get_the_ID()=="21"){
-		$tpl->dibujarPlantilla("automatizacion/index"/*,array("datos"=>$datos,"pie"=>$pie)*/);
+	
+	$form_contacto = do_shortcode('[contact-form-7 id="26" title="formulario-servicios"]');
+	$form_busqueda = do_shortcode('[contact-form-7 id="28" title="Formulario de Busqueda"]');
+	
+ 	$casos = select_post_cat_slug("casos-de-exito",3,"");
+	//var_dump($casos);
+
+	if(is_category()){
+		  $category = get_category( get_query_var( 'cat' ) );
+		  $categoria_descripcion = $category->cat_ID;
+		  $descripcion_cat = get_field('descripcion', "category" . '_' . $categoria_descripcion);
+		  $imagen_cat = get_field('imagen', "category" . '_' . $categoria_descripcion);
+		  $beneficios = select_post_cat_slug($category->slug,-1,"");
+		  $tmp = array_chunk($beneficios, 6);
+		  
+		 
+		  
+		  $tpl->dibujarPlantilla("category/index",array("fc"=>$form_contacto,"fb" => $form_busqueda,"ben"=>$tmp,"name"=>$category->cat_name,"description"=>$descripcion_cat/*,"image"=>$imagen_cat*/));
 	}
-	else if(get_the_ID()=="1"){
-		$tpl->dibujarPlantilla("easy-net"/*,array("datos"=>$datos,"pie"=>$pie)*/);
+	else{
+		if(get_the_ID()=="237"){
+			$categories = get_categories('child_of=3');
+			$slider = select_post_cat_slug("carrusel",3,"");
+			$tmp = array_chunk($categories, 6);
+			$tpl->dibujarPlantilla("easy-net",array("fc"=>$form_contacto,"fb" => $form_busqueda,"categorias"=>$tmp,"slider"=>$slider,"casos"=>$casos));
+		}else if(get_the_ID()=="29"){
+			$tpl->dibujarPlantilla("qSomos",array("fc"=>$form_contacto/*,"fb" => $form_busqueda*/));
+		}else if(get_the_ID()=="31"){
+			$tpl->dibujarPlantilla("contacto"/*,array("fc"=>$form_contacto,"fb" => $form_busqueda)*/);
+		}else if(get_the_ID()=="89"){
+			$tpl->dibujarPlantilla("sig/index"/*,array("fc"=>$form_contacto,"fb" => $form_busqueda)*/);
+		}
 	}
 }
 

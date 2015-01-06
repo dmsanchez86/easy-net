@@ -733,7 +733,7 @@ a.download:before{
 textarea{
 	resize: none;
 }
-.form input[type=text],.form select,.form textarea{
+.form input[type=text],.form input[type=email],.form select,.form textarea{
 	background: white;
 	border: thin solid #aaa;
 	border-radius: 1px;
@@ -756,4 +756,18 @@ textarea{
 h1.left{
 	float: left;
 	margin-bottom: .5em;
+}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img{
+	height: 100%;
+}
+.carousel-inner>.item{
+	height: 500px;
+	overflow: hidden;
+}
+.mar{
+	margin-top: 4.5em !important;
+	margin-bottom: 5.5em !important;
+}
+#owl-example5 .owl-pagination{
+	display: none !important;
 }

@@ -1,4 +1,4 @@
-</div>
+<?php if(!class_exists('raintpl')){exit;}?></div>
 </div>
 </div>
 <div class="container">
@@ -123,14 +123,16 @@
 	     </div>
 	     <div id="owl-example5" class="owl-carousel owl-theme">
 		     <div class="row">
-		     	{loop="iconos"}
+		     	<?php $counter1=-1; if( isset($iconos) && is_array($iconos) && sizeof($iconos) ) foreach( $iconos as $key1 => $value1 ){ $counter1++; ?>
+
 		          <div class="col-md-2">
 		          	<figure class="tcenter">
-		          		<img src="{$value[urlimg][0]}" class="img-center"/>
-		          		<figcaption>{$value["titulo"]}</figcaption>
+		          		<img src="<?php echo $value1["urlimg"]["0"];?>" class="img-center"/>
+		          		<figcaption><?php echo $value1["titulo"];?></figcaption>
 		          	</figure>
 		          </div>
-		          {/loop}
+		          <?php } ?>
+
 	          </div>
 	          
           </div>
@@ -142,29 +144,33 @@
 			<div class="container">
 				<div class="col-md-6 column">
 					<div class="services">
-						{$fs}
+						<?php echo $fs;?>
+
 					</div>
 					
 				</div>
 				<div class="col-md-1 column"></div>
 				<div class="col-md-5 column">
 					<div id="owl-example6" class="owl-carousel owl-theme">
-						{loop="novedades"}
+						<?php $counter1=-1; if( isset($novedades) && is_array($novedades) && sizeof($novedades) ) foreach( $novedades as $key1 => $value1 ){ $counter1++; ?>
+
 						<div class="novedades">
 							<div>
-								<h1 class="title">{$value["titulo"]}</h1>
+								<h1 class="title"><?php echo $value1["titulo"];?></h1>
 							</div>
 							<div>
 								<p>
-									{$value["contenidocomleto"]}
+									<?php echo $value1["contenidocomleto"];?>
+
 								</p>
-								<a href="{$value['link']}">VER M&Aacute;S</a>
+								<a href="<?php echo $value1['link'];?>">VER M&Aacute;S</a>
 							</div>
 							<div>
 								<a class="link" href="#">>>VER TODAS</a>
 							</div>
 						</div>
-						{/loop}
+						<?php } ?>
+
 					</div>
 				</div>
 			</div>
@@ -191,11 +197,13 @@
 			</div>
 			<div class="col-md-10 column">
 				<div id="owl-example2" class="owl-carousel owl-theme">
-					{loop="patrocinadores"}
+					<?php $counter1=-1; if( isset($patrocinadores) && is_array($patrocinadores) && sizeof($patrocinadores) ) foreach( $patrocinadores as $key1 => $value1 ){ $counter1++; ?>
+
 					<div class="carrusel">
-						<img src="{$value[urlimg][0]}"/>
+						<img src="<?php echo $value1["urlimg"]["0"];?>"/>
 					</div>
-					{/loop}
+					<?php } ?>
+
 				</div>	
 			</div>
 			<div class="col-md-1 column">

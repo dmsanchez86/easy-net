@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-21 10:36:44+0000\n"
+"PO-Revision-Date: 2014-12-26 12:53:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2833,15 +2833,15 @@ msgstr "Tipo de entrada no válido"
 msgid "The post type specified is not valid"
 msgstr "El tipo de entrada especificado no es válido"
 
-#: wp-includes/general-template.php:1149
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "A"
-
 #: wp-includes/general-template.php:1151
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
+
+#: wp-includes/general-template.php:1149
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
 
 #. translators: opening curly double quote
 #: wp-includes/formatting.php:62 wp-includes/formatting.php:3855

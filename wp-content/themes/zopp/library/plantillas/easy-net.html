@@ -57,26 +57,15 @@
 					</li>
 				</ol>
 				<div class="carousel-inner">
-					<div class="item active">
-						<img class="image" src="/wp-content/uploads/2014/12/caballo-1.png" />
-						<div class="carousel-caption">
-							<h4>
-								First Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
 					{loop="slider"}
-					<div class="item">
+					<div class='item {if="$counter==0"}active{/if}'>
 						<img alt="" class="image" src='{$value["urlimg"][0]}' />
 						<div class="carousel-caption">
 							<h4>
-								Second Thumbnail label
+								{$value["titulo"]}
 							</h4>
 							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								{$value["contenidocomleto"]}
 							</p>
 						</div>
 					</div>
@@ -189,7 +178,7 @@
 					    			<div class="col-md-8 column">
 					    				<div class="paragraph"> {$value["contenidocomleto"]}</div>
 					    				<div style="text-align:right">
-					    					<p class="title-footer">Lorem Ipsum</p>
+					    					<p class="title-footer">{$value["titulo"]}</p>
 					    				</div>
 					    			</div>
 					    			</div>
@@ -215,33 +204,29 @@
 			<div class="container">
 				<div class="col-md-6 column">
 					<div class="services">
-						{$fc}
+						{$fs}
 					</div>
 					
 				</div>
 				<div class="col-md-1 column"></div>
 				<div class="col-md-5 column">
-					<div class="novedades">
-						<div>
-							<h1 class="title">Novedades</h1>
+					<div id="owl-example6" class="owl-carousel owl-theme">
+						{loop="novedades"}
+						<div class="novedades">
+							<div>
+								<h1 class="title">{$value["titulo"]}</h1>
+							</div>
+							<div>
+								<p>
+									{$value["contenidocomleto"]}
+								</p>
+								<a href="{$value['link']}">VER M&Aacute;S</a>
+							</div>
+							<div>
+								<a class="link" href="#">>>VER TODAS</a>
+							</div>
 						</div>
-						<div>
-							<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-							sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-							magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-							quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-							ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam,
-							quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-							ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam,
-							quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-							ut aliquip ex ea commodo consequat.
-							</p>
-							<p>VER M&Aacute;S</p>
-						</div>
-						<div>
-							<a class="link" href="#">>>VER TODAS</a>
-						</div>
+						{/loop}
 					</div>
 				</div>
 			</div>
@@ -268,36 +253,11 @@
 			</div>
 			<div class="col-md-10 column">
 				<div id="owl-example2" class="owl-carousel owl-theme">
+					{loop="patrocinadores"}
 					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/atat.jpg"/>
+						<img src="{$value[urlimg][0]}"/>
 					</div>
-					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/cisco.png"/>
-					</div>
-					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/microsoft.jpeg"/>
-					</div>
-					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/eq1uinix.jpg"/>
-					</div>
-					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/broadsoft-logo.png"/>
-					</div>
-					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/atat.jpg"/>
-					</div>
-					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/cisco.png"/>
-					</div>
-					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/microsoft.jpeg"/>
-					</div>
-					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/eq1uinix.jpg"/>
-					</div>
-					<div class="carrusel">
-						<img src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/broadsoft-logo.png"/>
-					</div>
+					{/loop}
 				</div>	
 			</div>
 			<div class="col-md-1 column">

@@ -66,38 +66,50 @@ function pie_de_pagina(){?>
 function custom_loop(){
 	$tpl = new RaintTplConnect("wp-content/themes/zopp/library/plantillas/");
 	
-	$form_contacto = do_shortcode('[contact-form-7 id="26" title="formulario-servicios"]');
+	$form_contacto = do_shortcode('[contact-form-7 id="25" title="Formulario de contacto 1"]');
+	$form_servicio	= do_shortcode('[contact-form-7 id="26" title="formulario-servicios"]');
 	$form_busqueda = do_shortcode('[contact-form-7 id="28" title="Formulario de Busqueda"]');
 	
- 	$casos = select_post_cat_slug("casos-de-exito",3,"");
-	//var_dump($casos);
-
-	if(is_category()){
-		  $category = get_category( get_query_var( 'cat' ) );
-		  $categoria_descripcion = $category->cat_ID;
-		  $descripcion_cat = get_field('descripcion', "category" . '_' . $categoria_descripcion);
-		  $imagen_cat = get_field('imagen', "category" . '_' . $categoria_descripcion);
-		  $beneficios = select_post_cat_slug($category->slug,-1,"");
-		  $tmp = array_chunk($beneficios, 6);
-		  
-		 
-		  
-		  $tpl->dibujarPlantilla("category/index",array("fc"=>$form_contacto,"fb" => $form_busqueda,"ben"=>$tmp,"name"=>$category->cat_name,"description"=>$descripcion_cat/*,"image"=>$imagen_cat*/));
-	}
-	else{
-		if(get_the_ID()=="237"){
+	try{
+		if(is_page()){
+		if(is_front_page()){
+			$patrocinadores = select_post_cat_slug("patrocinadores",-1,"");
+			$novedades = select_post_cat_slug("novedades",-1,"");
+			$casos = select_post_cat_slug("casos-de-exito",3,"");
 			$categories = get_categories('child_of=3');
 			$slider = select_post_cat_slug("carrusel",3,"");
 			$tmp = array_chunk($categories, 6);
-			$tpl->dibujarPlantilla("easy-net",array("fc"=>$form_contacto,"fb" => $form_busqueda,"categorias"=>$tmp,"slider"=>$slider,"casos"=>$casos));
-		}else if(get_the_ID()=="29"){
-			$tpl->dibujarPlantilla("qSomos",array("fc"=>$form_contacto/*,"fb" => $form_busqueda*/));
-		}else if(get_the_ID()=="31"){
-			$tpl->dibujarPlantilla("contacto"/*,array("fc"=>$form_contacto,"fb" => $form_busqueda)*/);
-		}else if(get_the_ID()=="89"){
-			$tpl->dibujarPlantilla("sig/index"/*,array("fc"=>$form_contacto,"fb" => $form_busqueda)*/);
+			$tpl->dibujarPlantilla("easy-net",array("fs"=>$form_servicio,"fb" => $form_busqueda,"categorias"=>$tmp,"slider"=>$slider,"casos"=>$casos,"novedades"=>$novedades,"patrocinadores"=>$patrocinadores));
+		}else{
+			$currentID =  get_the_ID();
+			if(get_the_ID()=="29"){
+				$patrocinadores = select_post_cat_slug("patrocinadores",-1,"");
+			$novedades = select_post_cat_slug("novedades",-1,"");
+				$iconos = select_post_cat_slug("iconos",-1,"");
+				$tpl->dibujarPlantilla("qSomos",array("fs"=>$form_servicio,"fb" => $form_busqueda,"novedades"=>$novedades,"patrocinadores"=>$patrocinadores,"iconos"=>$iconos));
+			}else if(get_the_ID()=="31"){ 	
+				$tpl->dibujarPlantilla("contacto",array("fs"=>$form_servicio,"fb" => $form_busqueda,"fc"=>$form_contacto));
+			}else if(get_the_ID()=="89"){
+				$tpl->dibujarPlantilla("sig/index",array("fs"=>$form_servicio,"fb" => $form_busqueda));
+			}
 		}
+		}elseif(is_category()){
+			$patrocinadores = select_post_cat_slug("patrocinadores",-1,"");
+			$novedades = select_post_cat_slug("novedades",-1,"");
+			  $casos = select_post_cat_slug("casos-de-exito",3,"");	
+			  $category = get_category( get_query_var( 'cat' ) );
+			  $categoria_descripcion = $category->cat_ID;
+			  $descripcion_cat = get_field('descripcion', "category" . '_' . $categoria_descripcion);
+			  $imagen_cat = get_field('imagen', "category" . '_' . $categoria_descripcion);
+			  $beneficios = select_post_cat_slug($category->slug,-1,"");
+			  $tmp = array_chunk($beneficios, 6);
+			  $tpl->dibujarPlantilla("category/index",array("fs"=>$form_servicio,"fb" => $form_busqueda,"ben"=>$tmp,"name"=>$category->cat_name,"description"=>$descripcion_cat,"image"=>$imagen_cat,"casos"=>$casos,"novedades"=>$novedades,"patrocinadores"=>$patrocinadores));
+		
+		}
+	}catch(Exception $e){
+		echo 'Excepción capturada: ',  $e->getMessage(), "\n";
 	}
+
 }
 
 include_once "funcionesjson.php";

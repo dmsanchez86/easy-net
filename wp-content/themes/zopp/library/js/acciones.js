@@ -22,9 +22,15 @@ jQuery(document).ready(function(){
 		items:1,
 		autoPlay: true
 	});
-	setInterval(function(){ 
+	jQuery("#owl-example5").owlCarousel({
+		items:1
+	});
+	jQuery("#owl-example6").owlCarousel({
+		items:1
+	});
+	/*setInterval(function(){ 
 		jQuery(".right.carousel-control").click()
-	 }, 8000);
+	 }, 8000);*/
 	 
 });
 

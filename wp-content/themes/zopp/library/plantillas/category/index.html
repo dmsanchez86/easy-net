@@ -186,68 +186,27 @@
 		    	</div>
 		    	<div class="col-md-10 column">
 	    			<div id="owl-example1" class="owl-carousel owl-theme">
+	    				{loop="casos"}
 	    				<div>
-    					<div class="row clearfix">
-    						<div class="col-md-12 column">
-    							<div class="row clearfix">
-								<div class="col-md-4 column">
-	    							<div>
-	    								<img class="picture" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/Casos-exito.png"></img>
-	    								</div>
-		    					</div>
-				    			<div class="col-md-8 column">
-				    				<div class="paragraph"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-				    				sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-				    				magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-				    				quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-				    				ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-				    				dolor in hendrerit in vulputate velit esse molestie consequat,
-				    				vel illum dolore eu feugiat nulla facilisis at vero eros et
-				    				accumsan et iusto odio dignissim qui blandit praesent luptatum
-				    				zzril delenit augue duis dolore te feugait nulla facilisi.
-				    				Nam liber tempor cum soluta nobis eleifend option congue
-				    				nihil imperdiet doming id quod mazim placerat facer possim
-				    				assum. Typi non habent claritatem insitam; est usus legentis
-				    				in iis qui facit eorum claritatem.</div>
-				    				<div style="text-align:right">
-				    					<p class="title-footer">Lorem Ipsum</p>
-				    				</div>
-				    			</div>
-				    			</div>
-    						</div>
+	    					<div class="row clearfix">
+	    						<div class="col-md-12 column">
+	    							<div class="row clearfix">
+									<div class="col-md-4 column">
+		    							<div>
+		    								<img class="picture" src='{$value["urlimg"][0]}'/>
+		    								</div>
+			    					</div>
+					    			<div class="col-md-8 column">
+					    				<div class="paragraph"> {$value["contenidocomleto"]}</div>
+					    				<div style="text-align:right">
+					    					<p class="title-footer">Lorem Ipsum</p>
+					    				</div>
+					    			</div>
+					    			</div>
+	    						</div>
+	    					</div>
     					</div>
-    					</div>
-    					<div>
-    					<div class="row clearfix">
-    						<div class="col-md-12 column">
-    							<div class="row clearfix">
-								<div class="col-md-4 column">
-	    							<div>
-	    								<img class="picture" src="https://ease-net-dmsanchez86.c9.io/wp-content/uploads/2014/12/Casos-exito.png"></img>
-	    							</div>
-		    					</div>
-				    			<div class="col-md-8 column">
-				    				<div class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-				    				sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-				    				magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-				    				quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-				    				ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-				    				dolor in hendrerit in vulputate velit esse molestie consequat,
-				    				vel illum dolore eu feugiat nulla facilisis at vero eros et
-				    				accumsan et iusto odio dignissim qui blandit praesent luptatum
-				    				zzril delenit augue duis dolore te feugait nulla facilisi.
-				    				Nam liber tempor cum soluta nobis eleifend option congue
-				    				nihil imperdiet doming id quod mazim placerat facer possim
-				    				assum. Typi non habent claritatem insitam; est usus legentis
-				    				in iis qui facit eorum claritatem.</div>
-				    				<div style="text-align:right">
-				    					<p class="title-footer">Lorem Ipsum</p>
-				    				</div>
-				    			</div>
-				    			</div>
-    						</div>
-    					</div>
-    					</div>
+    					{/loop}
 	    			</div>
 		    	</div>
 		    	<div class="col-md-1 column">
@@ -266,33 +225,29 @@
 			<div class="container">
 				<div class="col-md-6 column">
 					<div class="services">
-						{$fc}
+						{$fs}
 					</div>
 					
 				</div>
 				<div class="col-md-1 column"></div>
 				<div class="col-md-5 column">
-					<div class="novedades">
-						<div>
-							<h1 class="title">Novedades</h1>
+					<div id="owl-example6" class="owl-carousel owl-theme">
+						{loop="novedades"}
+						<div class="novedades">
+							<div>
+								<h1 class="title">{$value["titulo"]}</h1>
+							</div>
+							<div>
+								<p>
+									{$value["contenidocomleto"]}
+								</p>
+								<a href="{$value['link']}">VER M&Aacute;S</a>
+							</div>
+							<div>
+								<a class="link" href="#">>>VER TODAS</a>
+							</div>
 						</div>
-						<div>
-							<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-							sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-							magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-							quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-							ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam,
-							quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-							ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam,
-							quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-							ut aliquip ex ea commodo consequat.
-							</p>
-							<p>VER M&Aacute;S</p>
-						</div>
-						<div>
-							<a class="link" href="#">>>VER TODAS</a>
-						</div>
+						{/loop}
 					</div>
 				</div>
 			</div>
@@ -319,36 +274,11 @@
 			</div>
 			<div class="col-md-10 column">
 				<div id="owl-example2" class="owl-carousel owl-theme">
+					{loop="patrocinadores"}
 					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/atat.jpg"/>
+						<img src="{$value[urlimg][0]}"/>
 					</div>
-					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/cisco.png"/>
-					</div>
-					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/microsoft.jpeg"/>
-					</div>
-					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/eq1uinix.jpg"/>
-					</div>
-					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/broadsoft-logo.png"/>
-					</div>
-					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/atat.jpg"/>
-					</div>
-					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/cisco.png"/>
-					</div>
-					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/microsoft.jpeg"/>
-					</div>
-					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/eq1uinix.jpg"/>
-					</div>
-					<div class="carrusel">
-						<img src="/wp-content/uploads/2014/12/broadsoft-logo.png"/>
-					</div>
+					{/loop}
 				</div>	
 			</div>
 			<div class="col-md-1 column">
